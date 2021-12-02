@@ -10,7 +10,6 @@ const auth = async (req, res, next) => {
         if (!user) {
             throw new Error()
         }
-        console.log('Authentication successful!')
 
         req.user = user
         req.token = token
